@@ -11,6 +11,14 @@
 		7650149B26AF8E57009FE3AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7650149A26AF8E57009FE3AF /* ContentView.swift */; };
 		7650149D26AF8E57009FE3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7650149C26AF8E57009FE3AF /* Assets.xcassets */; };
 		765014A026AF8E57009FE3AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7650149F26AF8E57009FE3AF /* Preview Assets.xcassets */; };
+		765014B026AF8E93009FE3AF /* PersistentHistoryTrackFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765014A726AF8E92009FE3AF /* PersistentHistoryTrackFetcher.swift */; };
+		765014B126AF8E93009FE3AF /* PersistentTrackBlog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 765014A826AF8E92009FE3AF /* PersistentTrackBlog.xcdatamodeld */; };
+		765014B226AF8E93009FE3AF /* PersistentHistoryTrackCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765014AA26AF8E92009FE3AF /* PersistentHistoryTrackCleaner.swift */; };
+		765014B326AF8E93009FE3AF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765014AB26AF8E92009FE3AF /* Extension.swift */; };
+		765014B426AF8E93009FE3AF /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765014AC26AF8E92009FE3AF /* Persistence.swift */; };
+		765014B526AF8E93009FE3AF /* PersistentHistoryTrackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765014AD26AF8E92009FE3AF /* PersistentHistoryTrackManager.swift */; };
+		765014B626AF8E93009FE3AF /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765014AE26AF8E92009FE3AF /* Configuration.swift */; };
+		765014B726AF8E93009FE3AF /* PersistentHistoryTrackMerger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765014AF26AF8E93009FE3AF /* PersistentHistoryTrackMerger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		7650149C26AF8E57009FE3AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7650149F26AF8E57009FE3AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		765014A126AF8E57009FE3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		765014A726AF8E92009FE3AF /* PersistentHistoryTrackFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentHistoryTrackFetcher.swift; sourceTree = "<group>"; };
+		765014A926AF8E92009FE3AF /* PersistentTrackBlog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersistentTrackBlog.xcdatamodel; sourceTree = "<group>"; };
+		765014AA26AF8E92009FE3AF /* PersistentHistoryTrackCleaner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentHistoryTrackCleaner.swift; sourceTree = "<group>"; };
+		765014AB26AF8E92009FE3AF /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		765014AC26AF8E92009FE3AF /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		765014AD26AF8E92009FE3AF /* PersistentHistoryTrackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentHistoryTrackManager.swift; sourceTree = "<group>"; };
+		765014AE26AF8E92009FE3AF /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		765014AF26AF8E93009FE3AF /* PersistentHistoryTrackMerger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentHistoryTrackMerger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,14 @@
 			children = (
 				7650149826AF8E57009FE3AF /* PersistentHistoryTrackingDemoApp.swift */,
 				7650149A26AF8E57009FE3AF /* ContentView.swift */,
+				765014AE26AF8E92009FE3AF /* Configuration.swift */,
+				765014AB26AF8E92009FE3AF /* Extension.swift */,
+				765014AC26AF8E92009FE3AF /* Persistence.swift */,
+				765014AA26AF8E92009FE3AF /* PersistentHistoryTrackCleaner.swift */,
+				765014A726AF8E92009FE3AF /* PersistentHistoryTrackFetcher.swift */,
+				765014AD26AF8E92009FE3AF /* PersistentHistoryTrackManager.swift */,
+				765014AF26AF8E93009FE3AF /* PersistentHistoryTrackMerger.swift */,
+				765014A826AF8E92009FE3AF /* PersistentTrackBlog.xcdatamodeld */,
 				7650149C26AF8E57009FE3AF /* Assets.xcassets */,
 				765014A126AF8E57009FE3AF /* Info.plist */,
 				7650149E26AF8E57009FE3AF /* Preview Content */,
@@ -138,8 +162,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765014B126AF8E93009FE3AF /* PersistentTrackBlog.xcdatamodeld in Sources */,
+				765014B526AF8E93009FE3AF /* PersistentHistoryTrackManager.swift in Sources */,
+				765014B226AF8E93009FE3AF /* PersistentHistoryTrackCleaner.swift in Sources */,
+				765014B626AF8E93009FE3AF /* Configuration.swift in Sources */,
 				7650149B26AF8E57009FE3AF /* ContentView.swift in Sources */,
+				765014B726AF8E93009FE3AF /* PersistentHistoryTrackMerger.swift in Sources */,
+				765014B426AF8E93009FE3AF /* Persistence.swift in Sources */,
+				765014B326AF8E93009FE3AF /* Extension.swift in Sources */,
 				7650149926AF8E57009FE3AF /* PersistentHistoryTrackingDemoApp.swift in Sources */,
+				765014B026AF8E93009FE3AF /* PersistentHistoryTrackFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +360,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		765014A826AF8E92009FE3AF /* PersistentTrackBlog.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				765014A926AF8E92009FE3AF /* PersistentTrackBlog.xcdatamodel */,
+			);
+			currentVersion = 765014A926AF8E92009FE3AF /* PersistentTrackBlog.xcdatamodel */;
+			path = PersistentTrackBlog.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7650148D26AF8E57009FE3AF /* Project object */;
 }

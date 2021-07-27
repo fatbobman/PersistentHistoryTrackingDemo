@@ -9,9 +9,25 @@ import SwiftUI
 
 @main
 struct PersistentHistoryTrackingDemoApp: App {
+    let persistenceController = PersistenceController.shared
+    @Environment(\.scenePhase) var scenePhase
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .onChange(of: scenePhase) { scenePhase in
+                    switch scenePhase {
+                    case .active:
+                        break
+                    case .background:
+                        let clean = PersistentHistoryCleaner(container: persistenceController.container)
+                        clean.clean()
+                    case .inactive:
+                        break
+                    @unknown default:
+                        break
+                    }
+                }
         }
     }
 }
